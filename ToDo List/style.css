@@ -1,0 +1,152 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(44, 44, 44, 1);
+}
+
+.list{
+    width: 967px;
+    align-items: center;
+    text-align: center;
+}
+
+
+h1{
+    font-family: Racing Sans One;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 80.64px;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    padding: 0 20px;
+    color: white;
+
+}
+
+h1::before {
+    width: 50px;
+    height: 0px;
+    content: "";
+    border: 1px solid white;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-100%, -50%);
+}
+h1::after {
+    width: 50px;
+    height: 0px;
+    content: "";
+    border: 1px solid white;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(120%, -50%);
+}
+
+
+.heading i{
+    font-size: 24px;
+    margin-inline: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.heading .lines {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.heading .lines .line {
+    width: 45%;
+    height: 0;
+    border: 1px solid white;;
+}
+
+
+.newTask{
+    margin-top: 80px !important;
+    margin-bottom: 36px !important;
+    position: relative;
+    display: flex;
+    background: white;
+    border-radius: 20px ;
+    overflow: hidden;  
+    width: 70%;
+ 
+}
+
+.newTask input{
+    width: 650px;
+    height: 49.44px;
+    color: black;
+    padding-left: 16px;
+    text-align: left;
+    align-items: center;
+    border: 0;
+    outline: 0;
+}
+
+.newTask button{
+    width: 145px;
+    border-radius: 20px;
+    background: rgba(79, 79, 79, 1);
+    font-family: Racing Sans One;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 31.5px;
+    border: 0;
+    color: white;
+}
+
+
+.bigLine{
+    height: 0px;
+    width: 100%;
+    border: 1px solid white;
+}
+
+.tasks{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.tasks .task{
+    height: 38px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(34, 34, 34, 1) ;
+    gap: 30px;
+}
+
+.task span {
+    padding: 0 10px;
+    font-family: Inter, sans-serif;
+    color: white;
+    font-size: 18px;
+}
+
+.task button{
+    width: 38px !important;
+    height: 38px !important;
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+}
+.task .button i{
+    background: rgba(153, 153, 153, 1);
+    color: rgba(34, 34, 34, 1);
+}
