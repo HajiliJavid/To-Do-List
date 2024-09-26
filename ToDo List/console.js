@@ -21,9 +21,9 @@ addTaskButton.addEventListener("click", addTask);
 
 tasksContainer.addEventListener("click", (e) => {
     let targetElement = null
-    if (e.target.tagName == 'BUTTON') {
+    if (e.target.tagName == 'button') {
         targetElement = e.target;
-    } else if (e.target.tagName == 'I') {
+    } else if (e.target.tagName == 'i') {
         targetElement = e.target.parentElement
     } else {
         return
