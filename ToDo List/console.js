@@ -2,6 +2,7 @@ const tasksContainer = document.querySelector(".tasks");
 const addTaskButton = document.querySelector(".newTask button");
 const taskInput = document.querySelector(".newTask input");
 const delButton = document.querySelectorAll(".task button");
+const iconButton = document.querySelectorAll(".task button i");
 
 const addTask = () => {
   const taskText = taskInput.value.trim();
@@ -21,11 +22,13 @@ addTaskButton.addEventListener("click", addTask);
 
 tasksContainer.addEventListener("click", (e) => {
     let targetElement = null
-    if (e.target.tagName == 'button') {
+    if (e.target.tagName == 'BUTTON') {
         targetElement = e.target;
-    } else if (e.target.tagName == 'i') {
+    } 
+    else if (e.target.tagName == 'I') {
         targetElement = e.target.parentElement
-    } else {
+    } 
+    else {
         return
     }
     const taskToRemove = targetElement.parentElement;
