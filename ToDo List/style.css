@@ -121,24 +121,26 @@ h1::after {
     gap: 35px;
 }
 
-.tasks .task{
-    height: 38px;
+.tasks .task {
     border-radius: 10px;
     overflow: hidden;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background: rgba(34, 34, 34, 1) ;
+    align-items: flex-start; 
+    background: rgba(34, 34, 34, 1);
     gap: 30px;
+    padding: 10px 10px; 
 }
 
 .task span {
-    padding: 0 10px;
     font-family: Inter, sans-serif;
     color: white;
     font-size: 18px;
+    word-wrap: break-word; 
+    max-width: 880px; 
+    display: block; 
+    white-space: normal; 
 }
-
 .task button{
     width: 38px !important;
     height: 38px !important;
